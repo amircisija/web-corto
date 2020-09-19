@@ -30,6 +30,9 @@ export default {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
+    },{
+      type: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'
     }]
   },
 
@@ -57,14 +60,14 @@ export default {
     theme: {
       light: true,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+        light: {
+          primary: '#3f51b5',
+          secondary:'#2196f3',
+          accent: '#03a9f4',
+          error:'#f44336',
+          warning: '#ffc107',
+          info: '#8bc34a',
+          success: '#8bc34a'
         }
       }
     }
