@@ -1,8 +1,14 @@
 <template>
   <div>
-    <v-btn v-for="item in items" :key="item.title"  text to="/test" nuxt>{{
-      item.title
-    }}</v-btn>
+    <v-btn
+      class="nav__links px-5"
+      v-for="item in items"
+      :key="item.title"
+      text
+      to="/test"
+      nuxt
+      >{{ item.title }}</v-btn
+    >
   </div>
 </template>
 <script>
