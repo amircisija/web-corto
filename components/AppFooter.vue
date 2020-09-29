@@ -1,5 +1,5 @@
 <template>
-  <v-footer absolute app class="app__footer">
+  <v-footer class="app__footer">
     <v-container>
       <v-row>
         <v-col class="text-center">
@@ -22,7 +22,8 @@ export default {
 </script>
 <style lang="scss">
 .app__footer {
-  background: #2a3b8b !important;
+  background: #2a3b8b;
+  background: #365abd !important;
   span {
     color: #fff;
   }

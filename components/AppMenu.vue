@@ -18,35 +18,43 @@ export default {
       items: [
         {
           title: "Početna",
-          to: "/"
+          sm: 0,
+          to: "/",
         },
         {
           title: "O nama",
-          to: "/#"
+          sm: 1,
+          to: "/#",
         },
         {
           title: "Voda",
-          to: "/#"
+          sm: 0,
+          to: "/#",
         },
         {
           title: "Kafa",
-          to: "/#"
+
+          sm: 0,
+          to: "/#",
         },
         {
           title: "Dezinfekcija",
-          to: "/#"
+          sm: 0,
+          to: "/#",
         },
         {
           title: "Pica",
-          to: "/#"
+          sm: 0,
+          to: "/#",
         },
         {
           title: "Kontakt",
-          to: "/#"
-        }
+          sm: 0,
+          to: "/#",
+        },
       ],
-      title: "Corto d.o.o"
+      title: "Corto d.o.o",
     };
-  }
+  },
 };
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div class="main__content">
     <HeroSection />
-    <IntroSection />
     <AboutUsSection />
     <CtaFirst />
     <ContactSection />
+    <MapSection />
   </div>
 </template>
 

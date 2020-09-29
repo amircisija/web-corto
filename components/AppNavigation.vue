@@ -27,21 +27,25 @@
     <div class="top__bar" id="topbar">
       <v-container class="py-2 ac__cont">
         <v-row class="py-0">
-          <v-col class="py-0">
-            <p class="d-inline-block pr-4">
+          <v-col class="py-0" cols="12" sm="8">
+            <p class="d-inline-block pr-3">
+              <v-icon class="top__bar--icon">mdi-google-maps</v-icon>
+              {{ company.address }}
+            </p>
+            <p class="d-inline-block pr-3">
+              <v-icon class="top__bar--icon">mdi-phone</v-icon>
               Kontaktirajte nas za besplatnu ponudu
               <a href="#" class="top__bar--link">
-                <strong>{{ phone }}</strong>
+                <strong>{{ company.phone }}</strong>
               </a>
             </p>
+            <p class="d-inline-block pr-3">
+              <v-icon class="top__bar--icon">mdi-email-outline</v-icon>
+              {{ company.email }}
+            </p>
           </v-col>
-          <v-col class="text-right py-0">
-            <p class="d-inline-block pr-4">
-              {{ address }}
-            </p>
-            <p class="d-inline-block">
-              {{ email }}
-            </p>
+          <v-col class="text-right py-0" cols="12" sm="4">
+            <p class="d-inline-block">Preuzmite katalog</p>
           </v-col>
         </v-row>
       </v-container>
@@ -54,7 +58,11 @@
               @click.stop="drawer = !drawer"
               class="d-sm-none"
             />
-            <v-toolbar-title v-text="title" />
+            <img
+              class="logo__img"
+              src="~/assets/images/logo.png"
+              alt="Corto d.o.o."
+            />
           </v-col>
           <v-col class="text-right" cols="9">
             <AppMenu />
@@ -69,8 +77,8 @@ export default {
   data() {
     return {
       phone: "092827323",
-      address: "Test",
-      email: "test-email",
+      address: "Zmaja od Bosne 14, 71000 Sarajevo",
+      email: "info@corto.ba",
       clipped: true,
       drawer: false,
       fixed: true,
@@ -78,20 +86,25 @@ export default {
         {
           icon: "mdi-apps",
           title: "Welcome",
-          to: "/"
+          to: "/",
         },
         {
           icon: "mdi-chart-bubble",
           title: "Inspire",
-          to: "/inspire"
-        }
+          to: "/inspire",
+        },
       ],
-      title: "Corto d.o.o"
+      title: "Corto d.o.o",
     };
   },
+  computed: {
+    company() {
+      return this.$store.state.company;
+    },
+  },
   mounted() {
-    this.$nextTick(function() {
-      window.addEventListener("scroll", function() {
+    this.$nextTick(function () {
+      window.addEventListener("scroll", function () {
         var navbar = document.getElementById("nav");
         var topbar = document.getElementById("topbar");
         var nav_classes = navbar.classList;
@@ -110,7 +123,7 @@ export default {
         }
       });
     });
-  }
+  },
 };
 </script>
 <style lang="scss">
@@ -122,14 +135,25 @@ export default {
   right: 0;
   height: 40px;
   z-index: 900;
-  background: #fafafa;
+  background: $main-dark;
   color: #fff;
   border-bottom: 1px solid #e2e2e2;
+  .top__bar--link {
+    color: #fff;
+    text-decoration: none;
+  }
   p {
     font-size: 12px;
-    color: #2d2d2d;
+    color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+  }
+  .top__bar--icon {
+    color: rgb(255, 255, 255);
+    background: #365abd;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 3px;
   }
 }
 .v-app-bar.v-app-bar--fixed {
@@ -167,6 +191,12 @@ export default {
   transition: all 0.2s ease-in-out;
 }
 .top__bar.shrink {
+  top: 0;
+}
+.logo__img {
+  max-width: 100px;
+  display: inline;
+  position: absolute;
   top: 0;
 }
 </style>
