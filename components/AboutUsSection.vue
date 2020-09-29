@@ -75,7 +75,8 @@
             <v-row align="center">
               <v-col class="grow">
                 <h2 class="text-h4 pl-5 mb-3">
-                  Novo u ponudi Corto d.o.o. <br />Dezinfekcijska sredstva
+                  Novo u ponudi Corto d.o.o. <br />
+                  <strong>Dezinfekcijska sredstva</strong>
                 </h2>
                 <p class="pl-5 white--text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non,

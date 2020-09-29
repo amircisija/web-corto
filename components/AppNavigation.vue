@@ -59,8 +59,9 @@
               class="d-sm-none"
             />
             <img
+              id="logo_image"
               class="logo__img"
-              src="~/assets/images/logo.png"
+              :src="logosrc"
               alt="Corto d.o.o."
             />
           </v-col>
@@ -82,6 +83,7 @@ export default {
       clipped: true,
       drawer: false,
       fixed: true,
+      logosrc: require("~/assets/images/logo-white.png"),
       items: [
         {
           icon: "mdi-apps",
@@ -103,9 +105,21 @@ export default {
       return this.$store.state.company;
     }
   },
+
   mounted() {
+    this.logosrc = require("~/assets/images/logo-white.png");
     this.$nextTick(function() {
       window.addEventListener("scroll", function() {
+        if (document.documentElement.scrollTop >= 20) {
+          document.getElementById(
+            "logo_image"
+          ).src = require("~/assets/images/logo.png");
+        } else {
+          document.getElementById(
+            "logo_image"
+          ).src = require("~/assets/images/logo-white.png");
+        }
+
         var navbar = document.getElementById("nav");
         var topbar = document.getElementById("topbar");
         var nav_classes = navbar.classList;

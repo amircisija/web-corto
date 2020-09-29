@@ -4,9 +4,12 @@
       <v-row>
         <v-col cols="8" class="padding-50 text-center mx-auto">
           <h3 class="title-heading__3">
-            Nudimo Vam
-            <span class="cta__span--1">besplatno korištenje</span> water cooler
-            aparata i kafe aparata.
+            Nudimo Vam <br />
+            <span class="cta__span--1"
+              ><strong>besplatno korištenje</strong></span
+            >
+            <br />
+            water cooler aparata i kafe aparata.
           </h3>
           <v-btn class="ma-2 bt--2" tile outlined>Ponuda za kafu</v-btn>
         </v-col>
