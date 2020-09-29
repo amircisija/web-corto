@@ -17,7 +17,7 @@
               {{ box.text }}
             </v-card-text>
             <v-card-actions>
-              <v-btn text color="primary">Saznaj više</v-btn>
+              <v-btn text color="success">Saznaj više</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -35,25 +35,25 @@ export default {
           title: "Aqua Bianca voda",
           text:
             "Aqua Bianca je prirodna negazirana mineralna voda. Zahvaljujući optimalnom odnosu minerala, kalcijuma i magnezijuma i niskom sadržaju natrijuma, Aqua Bianca voda pogodna je za svakodnevnu upotrebu.",
-          img: require("~/assets/images/icon__1.png"),
+          img: require("~/assets/images/icon__1.png")
         },
         {
           id: 2,
           title: "Kimbo kafa i aparati",
           text:
             "Užitak koji oživljava sva čula: puna zlatna krema, izbalansiran okus, intenzivna aroma koja mjenja pauzu za kafu u moment užitka za svaki dan.",
-          img: require("~/assets/images/icon__2.png"),
+          img: require("~/assets/images/icon__2.png")
         },
         {
           id: 3,
           title: "Dezinfekcijska oprema",
           text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-          img: require("~/assets/images/icon__3.png"),
-        },
-      ],
+          img: require("~/assets/images/icon__3.png")
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 <style lang="scss">

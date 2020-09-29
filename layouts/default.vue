@@ -90,4 +90,11 @@ p.lead {
 .mb-40 {
   margin-bottom: 40px !important;
 }
+.v-card__actions {
+  align-items: center;
+  display: flex;
+  padding: 8px;
+  position: absolute;
+  bottom: 20px;
+}
 </style>

@@ -86,25 +86,26 @@ export default {
         {
           icon: "mdi-apps",
           title: "Welcome",
-          to: "/",
+          to: "/"
         },
         {
           icon: "mdi-chart-bubble",
           title: "Inspire",
-          to: "/inspire",
-        },
+          to: "/inspire"
+        }
       ],
-      title: "Corto d.o.o",
+      title: "Corto d.o.o"
     };
   },
+
   computed: {
     company() {
       return this.$store.state.company;
-    },
+    }
   },
   mounted() {
-    this.$nextTick(function () {
-      window.addEventListener("scroll", function () {
+    this.$nextTick(function() {
+      window.addEventListener("scroll", function() {
         var navbar = document.getElementById("nav");
         var topbar = document.getElementById("topbar");
         var nav_classes = navbar.classList;
@@ -123,7 +124,7 @@ export default {
         }
       });
     });
-  },
+  }
 };
 </script>
 <style lang="scss">

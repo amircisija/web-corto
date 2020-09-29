@@ -43,17 +43,17 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "Name is required",
-      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+      v => !!v || "Name is required",
+      v => (v && v.length <= 10) || "Name must be less than 10 characters"
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      v => !!v || "E-mail is required",
+      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
     select: null,
     items: ["Item 1", "Item 2", "Item 3", "Item 4"],
-    checkbox: false,
+    checkbox: false
   }),
 
   methods: {
@@ -65,8 +65,8 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -123,13 +123,24 @@ export default {
 .bt--1 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
   padding: 25px 40px !important;
-  background: $main-dark !important;
+  background: $main-success !important;
   color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 0 15px 30px 0 rgb(115 119 110 / 32%);
+  transition: 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 20px 0 rgb(115 119 110 / 20%);
+  }
 }
 .bt--2 {
   background: #fff !important;
-  color: $main-dark !important;
+  color: #212121 !important;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
   padding: 25px 40px !important;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 20px 0 rgb(115 119 110 / 20%);
+  }
 }
 </style>

@@ -67,7 +67,11 @@
     <v-container class="ac__cont mb-40">
       <v-row>
         <v-col cols="8" class="mx-auto">
-          <v-alert prominent type="success" class="elevation-ac alert-cta">
+          <v-alert
+            prominent
+            type="success"
+            class="elevation-ac alert-cta elevation-20"
+          >
             <v-row align="center">
               <v-col class="grow">
                 <h2 class="text-h4 pl-5 mb-3">
@@ -111,7 +115,7 @@
             </p>
 
             <v-btn class="ma-2 ml-0 bt--1 mt-5" tile>Ponuda za vodu</v-btn>
-            <v-btn class="ma-2 bt--2 mt-5" tile outlined>Ponuda za kafu</v-btn>
+            <v-btn class="ma-2 bt--2 mt-5" outlined>Ponuda za kafu</v-btn>
           </v-col>
 
           <v-col sm="5" class="my-auto text-center">
@@ -133,14 +137,14 @@ export default {
     items: [
       { text: "Dostava u 24h", icon: "mdi-clock" },
       { text: "Zagarantovan kvalitet", icon: "mdi-account" },
-      { text: "Vrhunska podrška", icon: "mdi-flag" },
-    ],
-  }),
+      { text: "Vrhunska podrška", icon: "mdi-flag" }
+    ]
+  })
 };
 </script>
 <style lang="scss">
 .alert-cta {
-  background: url("~assets/images/cta-1.jpg") 50% 80% no-repeat;
+  background: url("~assets/images/cta-2.jpg") 50% 80% no-repeat;
   background-size: cover;
 }
 .about__us--section {
