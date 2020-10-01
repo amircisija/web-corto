@@ -83,7 +83,7 @@
                   a pariatur consectetur officia necessitatibus aperiam veniam.
                 </p>
               </v-col>
-              <v-col class="shrink">
+              <v-col>
                 <v-btn outlined>Pogledaj</v-btn>
               </v-col>
             </v-row>
@@ -138,9 +138,9 @@ export default {
     items: [
       { text: "Dostava u 24h", icon: "mdi-clock" },
       { text: "Zagarantovan kvalitet", icon: "mdi-account" },
-      { text: "Vrhunska podrška", icon: "mdi-flag" }
-    ]
-  })
+      { text: "Vrhunska podrška", icon: "mdi-flag" },
+    ],
+  }),
 };
 </script>
 <style lang="scss">

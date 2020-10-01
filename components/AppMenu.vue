@@ -5,7 +5,7 @@
       v-for="item in items"
       :key="item.title"
       text
-      to="/test"
+      :to="{ path: item.to, hash: item.hash }"
       nuxt
       >{{ item.title }}</v-btn
     >
@@ -20,37 +20,43 @@ export default {
           title: "Početna",
           sm: 0,
           to: "/",
+          hash: "",
         },
         {
           title: "O nama",
           sm: 1,
-          to: "/#",
+          to: "/",
+          hash: "#o-nama",
         },
         {
           title: "Voda",
           sm: 0,
-          to: "/#",
+          to: "/distribucija-vode",
+          hash: "",
         },
         {
           title: "Kafa",
-
           sm: 0,
-          to: "/#",
+          to: "/distribucija-kafe",
+          hash: "",
         },
         {
           title: "Dezinfekcija",
           sm: 0,
-          to: "/#",
+          to: "/dezinfekcijska-oprema",
+          hash: "",
         },
         {
           title: "Pica",
           sm: 0,
-          to: "/#",
+          to: "/napici",
+          hash: "",
         },
         {
           title: "Kontakt",
           sm: 0,
-          to: "/#",
+          to: "/",
+          hash: "#kontakt",
         },
       ],
       title: "Corto d.o.o",

@@ -88,28 +88,28 @@ export default {
         {
           icon: "mdi-apps",
           title: "Welcome",
-          to: "/"
+          to: "/",
         },
         {
           icon: "mdi-chart-bubble",
           title: "Inspire",
-          to: "/inspire"
-        }
+          to: "/inspire",
+        },
       ],
-      title: "Corto d.o.o"
+      title: "Corto d.o.o",
     };
   },
 
   computed: {
     company() {
       return this.$store.state.company;
-    }
+    },
   },
 
   mounted() {
     this.logosrc = require("~/assets/images/logo-white.png");
-    this.$nextTick(function() {
-      window.addEventListener("scroll", function() {
+    this.$nextTick(function () {
+      window.addEventListener("scroll", function () {
         if (document.documentElement.scrollTop >= 20) {
           document.getElementById(
             "logo_image"
@@ -126,19 +126,19 @@ export default {
         var topbar_classes = topbar.classList;
 
         if (document.documentElement.scrollTop >= 20) {
-          if (nav_classes.contains("shrink") === false) {
-            nav_classes.toggle("shrink");
-            topbar_classes.toggle("shrink");
+          if (nav_classes.contains("shrink-bar") === false) {
+            nav_classes.toggle("shrink-bar");
+            topbar_classes.toggle("shrink-bar");
           }
         } else {
-          if (nav_classes.contains("shrink") === true) {
-            nav_classes.toggle("shrink");
-            topbar_classes.toggle("shrink");
+          if (nav_classes.contains("shrink-bar") === true) {
+            nav_classes.toggle("shrink-bar");
+            topbar_classes.toggle("shrink-bar");
           }
         }
       });
     });
-  }
+  },
 };
 </script>
 <style lang="scss">
@@ -171,7 +171,7 @@ export default {
     margin-right: 3px;
   }
 }
-.v-app-bar.v-app-bar--fixed {
+#nav {
   position: fixed;
   top: 0;
   z-index: 5;
@@ -188,7 +188,7 @@ export default {
     text-transform: none;
   }
 }
-#nav.shrink {
+#nav.shrink-bar {
   background: rgb(255, 255, 255) !important;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   top: 40px;
@@ -201,11 +201,10 @@ export default {
     text-transform: none;
   }
 }
-.top__bar,
-.top__bar.shrink {
+.top__bar {
   transition: all 0.2s ease-in-out;
 }
-.top__bar.shrink {
+.top__bar.shrink-bar {
   top: 0;
 }
 .logo__img {

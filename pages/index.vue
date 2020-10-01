@@ -1,7 +1,7 @@
 <template>
   <div class="main__content">
     <HeroSection />
-    <AboutUsSection />
+    <AboutUsSection id="o-nama" />
     <CtaFirst />
     <ContactSection />
     <MapSection />
