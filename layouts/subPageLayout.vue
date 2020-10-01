@@ -1,7 +1,7 @@
 <template>
   <v-app light>
     <AppNavigation />
-    <AppPageTitle />
+
     <v-main class="py-0">
       <nuxt />
     </v-main>
