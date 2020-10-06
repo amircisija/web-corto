@@ -83,7 +83,7 @@
                   a pariatur consectetur officia necessitatibus aperiam veniam.
                 </p>
               </v-col>
-              <v-col>
+              <v-col class="shrink">
                 <v-btn outlined>Pogledaj</v-btn>
               </v-col>
             </v-row>
@@ -115,8 +115,16 @@
               smatramo privilegijom.
             </p>
 
-            <v-btn class="ma-2 ml-0 bt--1 mt-5" tile>Ponuda za vodu</v-btn>
-            <v-btn class="ma-2 bt--2 mt-5" outlined>Ponuda za kafu</v-btn>
+            <v-btn
+              class="ma-2 ml-0 bt--1 mt-5"
+              tile
+              nuxt
+              to="/distribucija-vode"
+              >Ponuda za vodu</v-btn
+            >
+            <v-btn class="ma-2 bt--2 mt-5" outlined nuxt to="/distribucija-kafe"
+              >Ponuda za kafu</v-btn
+            >
           </v-col>
 
           <v-col sm="5" class="my-auto text-center">

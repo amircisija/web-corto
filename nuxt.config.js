@@ -83,7 +83,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/scss/colors.scss'
+    '@/assets/scss/colors.scss',
+    '~/assets/main.css'
   ],
   styleResources: {
     scss: ['@/assets/scss/*.scss']
@@ -94,7 +95,14 @@ export default {
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
-
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  },
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in'
+  },
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/vuetify

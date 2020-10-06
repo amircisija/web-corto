@@ -118,6 +118,7 @@
 <script>
 export default {
   layout: "subPageLayout",
+  transition: "home",
   data() {
     return {
       boxes: [

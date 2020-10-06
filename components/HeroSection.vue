@@ -3,6 +3,7 @@
     <v-container fluid class="fill-height ac__cont hero__content">
       <v-row align="center" justify="center" class="fill-height">
         <v-col cols="12" sm="7" class="mx-auto text-left">
+          <h2>Besplatna dostava u roku od 24 h</h2>
           <h1>
             Distribucija vode i kafe za Vaš ured širom Bosne i Hercegovine
           </h1>
@@ -43,17 +44,17 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      v => !!v || "Name is required",
-      v => (v && v.length <= 10) || "Name must be less than 10 characters"
+      (v) => !!v || "Name is required",
+      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
     ],
     email: "",
     emailRules: [
-      v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
     select: null,
     items: ["Item 1", "Item 2", "Item 3", "Item 4"],
-    checkbox: false
+    checkbox: false,
   }),
 
   methods: {
@@ -65,8 +66,8 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">
@@ -108,9 +109,16 @@ export default {
   h1 {
     color: #fff;
     font-size: 60px;
-    line-height: 66px;
+    line-height: 68px;
     margin-bottom: 30px;
     font-weight: 600;
+  }
+  h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    font-weight: 300;
   }
   p.hero__section--p {
     color: rgba(255, 255, 255, 0.9);

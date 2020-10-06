@@ -11,7 +11,12 @@
             <br />
             water cooler aparata i kafe aparata.
           </h3>
-          <v-btn class="ma-2 bt--2" tile outlined>Ponuda za kafu</v-btn>
+          <v-btn class="ma-2 bt--2" tile outlined nuxt to="/distribucija-vode"
+            >Ponuda za vodu</v-btn
+          >
+          <v-btn class="ma-2 bt--2" tile outlined nuxt to="/distribucija-kafe"
+            >Ponuda za kafu</v-btn
+          >
         </v-col>
       </v-row>
     </v-container>

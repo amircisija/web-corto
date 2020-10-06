@@ -66,7 +66,7 @@ p.lead {
   padding: 100px;
 }
 .padding-200 {
-  padding: 200px;
+  padding: 120px;
 }
 .page__section {
   padding: 100px 0;

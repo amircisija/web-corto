@@ -5,11 +5,21 @@
       <section class="page__section">
         <v-container class="ac__cont">
           <v-row>
-            <v-col sm="5" class="my-auto">
+            <v-col sm="5" class="my-auto pos__rel">
               <img
-                class="img-fluid"
+                src="~/assets/images/k--1.jpg"
+                class="elevation-ac k__img--1"
+                alt=""
+              />
+              <img
+                src="~/assets/images/k--2.jpg"
+                class="elevation-ac k__img--2"
+                alt=""
+              />
+              <img
+                class="img-fluid elevation-ac"
                 style="max-width: 100%"
-                src="~/assets/images/img--2.jpg"
+                src="~/assets/images/k--3.jpg"
               />
             </v-col>
             <v-col class="padding-60 my-auto" sm="7">
@@ -41,7 +51,6 @@
               </p>
               <br />
               <v-btn class="ma-2 ml-0 bt--1" tile>Naruči</v-btn>
-              <v-btn class="ma-2 bt--2" outlined></v-btn>
             </v-col>
           </v-row>
         </v-container>
@@ -52,6 +61,7 @@
 <script>
 export default {
   layout: "subPageLayout",
+  transition: "home",
   data() {
     return {
       title: "Distribucija Kimbo kafe i aparata",
@@ -86,6 +96,21 @@ export default {
 };
 </script>
 <style lang="scss">
+.pos__rel {
+  position: relative;
+}
+.k__img--1 {
+  position: absolute;
+  max-width: 240px;
+  top: -100px;
+  left: -80px;
+}
+.k__img--2 {
+  position: absolute;
+  max-width: 200px;
+  bottom: -100px;
+  right: -10px;
+}
 .subpage__1 {
   .section__quality {
     background: url("~assets/images/quality/bg.jpg") 50% 50% no-repeat;
