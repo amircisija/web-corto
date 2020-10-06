@@ -1,12 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer
-      v-model="drawer"
-      :clipped="clipped"
-      temporary
-      absolute
-      app
-    >
+    <v-navigation-drawer v-model="drawer" temporary app>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -27,7 +21,7 @@
     <div class="top__bar" id="topbar">
       <v-container class="py-2 ac__cont">
         <v-row class="py-0">
-          <v-col class="py-0" cols="12" sm="8">
+          <v-col class="py-0" cols="12" sm="9" md="9">
             <p class="d-inline-block pr-3">
               <v-icon class="top__bar--icon">mdi-google-maps</v-icon>
               {{ company.address }}
@@ -44,20 +38,20 @@
               {{ company.email }}
             </p>
           </v-col>
-          <v-col class="text-right py-0" cols="12" sm="4">
+          <v-col class="text-right py-0" cols="12" sm="3" md="3">
             <p class="d-inline-block">Preuzmite katalog</p>
           </v-col>
         </v-row>
       </v-container>
     </div>
     <v-app-bar id="nav" :clipped-left="clipped" fixed app color="secondary">
-      <v-container class="ac__cont">
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        class="d-flex d-sm-none"
+      />
+      <v-container class="ac__cont d-sm-flex hidden-sm-and-down">
         <v-row>
-          <v-col cols="3">
-            <v-app-bar-nav-icon
-              @click.stop="drawer = !drawer"
-              class="d-sm-none"
-            />
+          <v-col cols="12" md="3" sm="2">
             <img
               id="logo_image"
               class="logo__img"
@@ -65,7 +59,7 @@
               alt="Corto d.o.o."
             />
           </v-col>
-          <v-col class="text-right" cols="9">
+          <v-col class=" text-right" cols="12" sm="10" md="9">
             <AppMenu />
           </v-col>
         </v-row>
@@ -88,28 +82,28 @@ export default {
         {
           icon: "mdi-apps",
           title: "Welcome",
-          to: "/",
+          to: "/"
         },
         {
           icon: "mdi-chart-bubble",
           title: "Inspire",
-          to: "/inspire",
-        },
+          to: "/inspire"
+        }
       ],
-      title: "Corto d.o.o",
+      title: "Corto d.o.o"
     };
   },
 
   computed: {
     company() {
       return this.$store.state.company;
-    },
+    }
   },
 
   mounted() {
     this.logosrc = require("~/assets/images/logo-white.png");
-    this.$nextTick(function () {
-      window.addEventListener("scroll", function () {
+    this.$nextTick(function() {
+      window.addEventListener("scroll", function() {
         if (document.documentElement.scrollTop >= 20) {
           document.getElementById(
             "logo_image"
@@ -138,7 +132,7 @@ export default {
         }
       });
     });
-  },
+  }
 };
 </script>
 <style lang="scss">
@@ -212,5 +206,17 @@ export default {
   display: inline;
   position: absolute;
   top: 0;
+}
+@media only screen and (max-width: 1000px) {
+  #topbar {
+    display: none;
+  }
+  #nav.shrink-bar {
+    background: white !important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    top: 0;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
+      0 8px 16px -8px rgba(0, 0, 0, 0.01), 0 -6px 16px -6px rgba(0, 0, 0, 0.03) !important;
+  }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <section class="intro__section">
+  <section>
     <v-container class="ac__cont">
       <v-row>
-        <v-col v-for="box in boxes" :key="box.id">
+        <v-col v-for="box in boxes" :key="box.id" cols="12" sm="6" md="4">
           <v-card class="elevation-ac intro__cards">
             <div class="img__box">
               <img :src="box.img" class="pt-2" width="40" alt="" />

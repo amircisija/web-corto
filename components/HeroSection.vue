@@ -2,7 +2,7 @@
   <section class="hero__section">
     <v-container fluid class="fill-height ac__cont hero__content">
       <v-row align="center" justify="center" class="fill-height">
-        <v-col cols="12" sm="7" class="mx-auto text-left">
+        <v-col cols="12" sm="12" md="7" class="mx-auto text-left ts--d">
           <h2>Besplatna dostava u roku od 24 h</h2>
           <h1>
             Distribucija kvalitetne vode i kafe za Vaš ured
@@ -18,11 +18,8 @@
         </v-col>
         <v-col sm="5"></v-col>
       </v-row>
-      <v-row>
-        <v-col> </v-col>
-      </v-row>
     </v-container>
-    <IntroSection />
+    <IntroSection class="d-sm-up intro__section" />
     <div class="img__holder">
       <img
         class="img__holder--img img__holder--image--1"
@@ -34,7 +31,7 @@
       />
     </div>
     <div class="shape__wrapper">
-      <img src="~/assets/images/shape__hero.png" />
+      <img class="img-fluid" src="~/assets/images/shape__hero.png" />
     </div>
   </section>
 </template>
@@ -86,7 +83,7 @@ export default {
   background-size: cover;
   .shape__wrapper {
     position: absolute;
-    bottom: -7px;
+    bottom: -10px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -149,6 +146,68 @@ export default {
   transition: 0.3s ease-in-out;
   &:hover {
     box-shadow: 0 5px 20px 0 rgb(115 119 110 / 20%);
+  }
+}
+.hero__section .img__holder {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+.hero__section .img__holder img {
+  width: 870px;
+  right: -100px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .hero__section .img__holder img {
+    width: 700px;
+    right: -100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .hero__section .img__holder img {
+    width: 700px;
+    right: -190px;
+  }
+  .ts--d {
+    top: 100px;
+    position: absolute;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hero__section h1 {
+    color: #fff;
+    font-size: 49px;
+    line-height: 68px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    max-width: 600px;
+  }
+  .d-sm-up {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .img__holder--image--1,
+  .img__holder--image--2 {
+    display: none;
+  }
+  .hero__section h2 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .hero__section h1 {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .hero__section p.hero__section--p {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 </style>

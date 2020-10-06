@@ -3,14 +3,14 @@
     <section class="about__us--section mb-40">
       <v-container class="ac__cont">
         <v-row>
-          <v-col sm="5" class="my-auto">
+          <v-col cols="12" sm="12" md="5" class="my-auto">
             <img
               class="img-fluid"
               style="max-width: 100%"
               src="~/assets/images/img--2.jpg"
             />
           </v-col>
-          <v-col class="padding-60 my-auto" sm="7">
+          <v-col cols="12" sm="12" md="7" class="padding-60 my-auto">
             <span class="title-span__2">Kvalitet i povjerenje</span>
             <h2 class="title-heading__2 mb-2">
               Kvalitetna voda i kafa za Vaš ured širom Bosne i Hercegovine
@@ -166,6 +166,11 @@ export default {
 .list__inner {
   p {
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .about__us--section {
+    padding-top: 0;
   }
 }
 </style>

@@ -97,4 +97,7 @@ p.lead {
   position: absolute;
   bottom: 20px;
 }
+.img-fluid {
+  min-width: 100%;
+}
 </style>
