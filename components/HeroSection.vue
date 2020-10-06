@@ -5,13 +5,13 @@
         <v-col cols="12" sm="7" class="mx-auto text-left">
           <h2>Besplatna dostava u roku od 24 h</h2>
           <h1>
-            Distribucija vode i kafe za Vaš ured širom Bosne i Hercegovine
+            Distribucija kvalitetne vode i kafe za Vaš ured
           </h1>
           <p class="hero__section--p">
             Sa više od 10 godina iskustva u pružanju usluga biznis korisnicima,
-            firma Corto je
-            <span class="cta__span--1">lider u oblasti dirstibucije vode</span
-            >pomoću water cooler aparata u Bosni i Hercegovini.
+            firma Corto je <br />
+            <span class="cta__span--1">lider u oblasti dirstibucije vode</span>
+            pomoću water cooler aparata u Bosni i Hercegovini.
           </p>
           <v-btn class="ma-2 ml-0 bt--1" tile>Ponuda za vodu</v-btn>
           <v-btn class="ma-2 bt--2" tile outlined>Ponuda za kafu</v-btn>
@@ -44,17 +44,17 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "Name is required",
-      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+      v => !!v || "Name is required",
+      v => (v && v.length <= 10) || "Name must be less than 10 characters"
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      v => !!v || "E-mail is required",
+      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
     select: null,
     items: ["Item 1", "Item 2", "Item 3", "Item 4"],
-    checkbox: false,
+    checkbox: false
   }),
 
   methods: {
@@ -66,8 +66,8 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss">

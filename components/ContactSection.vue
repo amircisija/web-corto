@@ -1,5 +1,5 @@
 <template>
-  <section class="contact contact__section">
+  <section class="contact contact__section" id="kontakt">
     <v-container fluid class="py-0">
       <v-row>
         <v-col
@@ -21,7 +21,7 @@
           </p>
 
           <v-card
-            class="elevation-ac contact__information mt-5"
+            class="do-elevation contact__information mt-5"
             max-width="444"
           >
             <v-card-text>
@@ -88,11 +88,14 @@
           <v-container fill-height>
             <v-row olumn justify-space-between fill-height>
               <v-col>
-                <v-card class="elevation-ac contact__card">
+                <v-card class="do-elevation contact__card">
                   <v-card-text>
                     <v-form ref="form" v-model="valid" lazy-validation>
                       <v-container>
                         <v-row>
+                          <v-col cols="12">
+                            <h3>Pošaljite nam poruku</h3>
+                          </v-col>
                           <v-col>
                             <v-text-field
                               v-model="name"
@@ -100,6 +103,7 @@
                               :rules="nameRules"
                               label="Vaše ime"
                               required
+                              filled
                             ></v-text-field>
                           </v-col>
                         </v-row>
@@ -110,6 +114,7 @@
                               :rules="emailRules"
                               label="E-mail"
                               required
+                              filled
                             ></v-text-field>
                           </v-col>
                           <v-col>
@@ -117,6 +122,7 @@
                               v-model="phone"
                               label="Telefon"
                               required
+                              filled
                             ></v-text-field
                           ></v-col>
                         </v-row>
@@ -125,15 +131,17 @@
                             <v-select
                               v-model="select"
                               :items="items"
-                              :rules="[(v) => !!v || 'Obavezno polje']"
+                              :rules="[v => !!v || 'Obavezno polje']"
                               label="Imam pitanje u vezi"
                               required
+                              filled
                             ></v-select>
                             <v-textarea
                               name="input-7-1"
                               label="Vaša poruka"
                               value=""
                               hint="Pošaljite nam upit"
+                              filled
                             ></v-textarea>
                           </v-col>
                         </v-row>
@@ -178,33 +186,33 @@ export default {
     contactInfos: [
       { text: "Dostava u 24h", icon: "mdi-clock" },
       { text: "Zagarantovan kvalitet", icon: "mdi-account" },
-      { text: "Vrhunska podrška", icon: "mdi-flag" },
+      { text: "Vrhunska podrška", icon: "mdi-flag" }
     ],
     valid: true,
     name: "",
     phone: null,
     nameRules: [
-      (v) => !!v || "Obavezno polje",
-      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+      v => !!v || "Obavezno polje",
+      v => (v && v.length <= 10) || "Name must be less than 10 characters"
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "Obavezno polje",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      v => !!v || "Obavezno polje",
+      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
     select: null,
     items: [
       "Narudžbe vode",
       "Narudžbe kafe",
       "Narudžbe dezinfekcijska sredstava",
-      "Narudžbe pića i snacks",
+      "Narudžbe pića i snacks"
     ],
-    checkbox: false,
+    checkbox: false
   }),
   computed: {
     company() {
       return this.$store.state.company;
-    },
+    }
   },
   methods: {
     validate() {
@@ -215,8 +223,8 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss">
