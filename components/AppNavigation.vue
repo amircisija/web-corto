@@ -205,9 +205,13 @@ export default {
 
   .nav__links {
     color: #fff;
-    font-family: Montserrat, serif;
+    font-family: "Montserrat", serif;
     font-weight: 400 !important;
     text-transform: none;
+
+    .v-btn__content {
+      font-family: "Montserrat", serif;
+    }
   }
 }
 
@@ -220,7 +224,7 @@ export default {
 
   .nav__links {
     color: rgb(56, 56, 56);
-    font-family: Montserrat, serif;
+    font-family: "Montserrat", serif;
     font-weight: 400 !important;
     text-transform: none;
   }
