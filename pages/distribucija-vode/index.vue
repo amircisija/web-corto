@@ -111,22 +111,36 @@
             </v-col>
           </v-row>
           <v-row class="page__section quality__section--xs">
-            <v-col
-              class="box__outer--1 text-center"
-              cols="12"
-              sm="12"
-              v-for="box in boxes"
-              v-bind:key="box.id"
-            >
-              <div class="box__wrapper">
-                <div>
-                  <div class="box__inner--text">
-                    <img :src="`${box.image}`" alt="" />
-                    <h4>{{ box.title }}</h4>
-                    <p>{{ box.subtext }}</p>
-                  </div>
+            <v-col class="box__outer--1 text-left my-auto" cols="12" sm="6">
+              <div
+                class="box__wrapper"
+                v-for="box in boxes"
+                v-bind:key="box.id"
+              >
+                <div class="box__inner--text d-flex justify-start align-start">
+                  <img :src="`${box.image}`" class="d-inline-block" alt="" />
+                  <h4 class="d-inline-block pt-5">{{ box.title }}</h4>
+                  <p class="d-inline-block">{{ box.subtext }}</p>
                 </div>
               </div>
+              <div
+                class="box__wrapper"
+                v-for="box in boxes2"
+                v-bind:key="box.id"
+              >
+                <div class="box__inner--text d-flex justify-start align-start">
+                  <img :src="`${box.image}`" class="d-inline-block" alt="" />
+                  <h4 class="d-inline-block pt-5">{{ box.title }}</h4>
+                  <p class="d-inline-block">{{ box.subtext }}</p>
+                </div>
+              </div>
+            </v-col>
+            <v-col cols="12" sm="6" class="text-center my-auto">
+              <img
+                class="img-fluid mx-auto text-center"
+                style="max-width: 100%"
+                src="~/assets/images/img--glass.png"
+              />
             </v-col>
           </v-row>
         </v-container>
@@ -370,7 +384,9 @@ export default {
     .box__inner--text p {
       font-weight: 700;
       color: #2b69bf;
-      font-size: 1.6em;
+      font-size: 1.2em;
+      padding-top: 25px;
+      margin-left: 20px;
     }
   }
 }

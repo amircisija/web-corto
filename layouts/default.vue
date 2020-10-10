@@ -130,13 +130,13 @@ p.lead {
 
   h2.title-heading__2 {
     font-weight: 700;
-    line-height: 46px;
-    font-size: 34px;
+    line-height: 46px !important;
+    font-size: 34px !important;
     color: #424242;
   }
 
   .padding-60 {
-    padding: 0 30px;
+    padding: 0 30px !important;
   }
 }
 </style>

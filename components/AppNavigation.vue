@@ -5,8 +5,7 @@
         <v-list-item class="mb-5">
           <v-list-item-content>
             <img
-              id="logo_image"
-              class="logo__img"
+              class="logo__img--mobile"
               src="~/assets/images/logo.png"
               alt="Corto d.o.o."
             />
@@ -242,8 +241,19 @@ export default {
   top: 0;
 }
 
+.logo__img--mobile {
+  max-width: 100px;
+  display: inline;
+  position: absolute;
+  top: 0;
+}
+
 #mobile__menu {
   z-index: 900;
+
+  .v-list-item {
+    border-bottom: 1px solid #f3f3f3;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
