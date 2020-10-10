@@ -25,6 +25,7 @@
     </v-container>
   </section>
 </template>
+
 <script>
 export default {
   data() {
@@ -35,44 +36,48 @@ export default {
           title: "Aqua Bianca voda",
           text:
             "Aqua Bianca je prirodna negazirana mineralna voda. Zahvaljujući optimalnom odnosu minerala, kalcijuma i magnezijuma i niskom sadržaju natrijuma, Aqua Bianca voda pogodna je za svakodnevnu upotrebu.",
-          img: require("~/assets/images/icon__1.png")
+          img: require("~/assets/images/icon__1.png"),
         },
         {
           id: 2,
           title: "Kimbo kafa i aparati",
           text:
             "Užitak koji oživljava sva čula: puna zlatna krema, izbalansiran okus, intenzivna aroma koja mjenja pauzu za kafu u moment užitka za svaki dan.",
-          img: require("~/assets/images/icon__2.png")
+          img: require("~/assets/images/icon__2.png"),
         },
         {
           id: 3,
           title: "Dezinfekcijska oprema",
           text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-          img: require("~/assets/images/icon__3.png")
-        }
-      ]
+          img: require("~/assets/images/icon__3.png"),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
+
 <style lang="scss">
 .intro__cards {
   padding: 20px;
   min-height: 390px;
   padding-top: 30px;
+
   .hr-style--1 {
     border-top: 4px solid #365abd;
     width: 80px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
+
   h3 {
     display: block;
     width: 100%;
-    font-weight: 200;
+    font-weight: 300 !important;
   }
 }
+
 .intro__section {
   z-index: 200;
   position: absolute;
@@ -80,6 +85,7 @@ export default {
   right: 0;
   bottom: -200px;
 }
+
 .img__box {
   display: inline-block;
   background: #eaeaea;

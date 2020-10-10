@@ -3,14 +3,14 @@
     <v-navigation-drawer v-model="drawer" temporary app id="mobile__menu">
       <v-list>
         <v-list-item class="mb-5">
-          <v-list-content>
+          <v-list-item-content>
             <img
               id="logo_image"
               class="logo__img"
               src="~/assets/images/logo.png"
               alt="Corto d.o.o."
             />
-          </v-list-content>
+          </v-list-item-content>
         </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
@@ -20,7 +20,7 @@
           exact
         >
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" nuxt />
+            <v-list-item-title v-text="item.title" nuxt></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -240,9 +240,6 @@ export default {
   display: inline;
   position: absolute;
   top: 0;
-}
-
-.v-navigation-drawer .v-list:not(.v-select-list) {
 }
 
 #mobile__menu {

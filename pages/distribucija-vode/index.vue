@@ -5,14 +5,14 @@
       <section class="page__section pb-0">
         <v-container class="ac__cont">
           <v-row>
-            <v-col sm="5" class="my-auto">
+            <v-col cols="12" sm="12" md="5" class="my-auto">
               <img
                 class="img-fluid"
                 style="max-width: 100%"
                 src="~/assets/images/img--2.jpg"
               />
             </v-col>
-            <v-col class="padding-60 my-auto" sm="7">
+            <v-col cols="12" sm="12" md="7" class="padding-60 my-auto">
               <span class="title-span__2">Prirodna izvorska voda</span>
               <h2 class="title-heading__2 mb-2">Aqua Bianca voda</h2>
               <p class="lead">
@@ -57,8 +57,8 @@
               <hr class="hr-style--1" />
             </v-col>
           </v-row>
-          <v-row class="page__section">
-            <v-col class="box__outer--1">
+          <v-row class="page__section quality__section--sm">
+            <v-col class="box__outer--1" cols="12" sm="4">
               <div class="box__wrapper">
                 <div
                   v-for="box in boxes"
@@ -80,14 +80,14 @@
                 </div>
               </div>
             </v-col>
-            <v-col>
+            <v-col cols="12" sm="4">
               <img
                 class="img-fluid"
                 style="max-width: 100%"
                 src="~/assets/images/img--glass.png"
               />
             </v-col>
-            <v-col class="box__outer--2">
+            <v-col class="box__outer--2" cols="12" sm="4">
               <div class="box__wrapper">
                 <div
                   v-for="box in boxes2"
@@ -110,11 +110,31 @@
               </div>
             </v-col>
           </v-row>
+          <v-row class="page__section quality__section--xs">
+            <v-col
+              class="box__outer--1 text-center"
+              cols="12"
+              sm="12"
+              v-for="box in boxes"
+              v-bind:key="box.id"
+            >
+              <div class="box__wrapper">
+                <div>
+                  <div class="box__inner--text">
+                    <img :src="`${box.image}`" alt="" />
+                    <h4>{{ box.title }}</h4>
+                    <p>{{ box.subtext }}</p>
+                  </div>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
         </v-container>
       </section>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   layout: "subPageLayout",
@@ -198,52 +218,66 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 .subpage__1 {
   .section__quality {
     background: url("~assets/images/quality/bg.jpg") 50% 50% no-repeat;
     background-size: contain;
+    position: relative;
+    overflow: hidden;
+
     .hr-style--1 {
       margin: 0 auto;
       text-align: center;
     }
   }
+
   .box__outer--1 {
     .box__wrapper {
       position: relative;
       top: 15%;
     }
+
     .box__1 {
       top: 0;
     }
+
     .box__2 {
       top: 160px;
       right: 60px;
     }
+
     .box__3 {
       top: 320px;
       right: 0;
     }
+
     .box__inner {
       position: absolute;
       width: 100%;
       text-align: right;
+
       p {
         margin-bottom: 0;
       }
+
       .box__inner--text {
         position: absolute;
         right: 120px;
+
         h4 {
           font-size: 1.6em;
           color: $main-dark;
         }
+
         p {
           font-weight: 700;
           color: #2b69bf;
           font-size: 1.6em;
         }
       }
+
       .box__inner--image {
         position: absolute;
         right: 0;
@@ -251,47 +285,92 @@ export default {
       }
     }
   }
+
   .box__outer--2 {
     .box__wrapper {
       position: relative;
       top: 15%;
     }
+
     .box__1 {
       top: 0;
     }
+
     .box__2 {
       top: 160px;
       left: 60px;
     }
+
     .box__3 {
       top: 320px;
       left: 0;
     }
+
     .box__inner {
       position: absolute;
       width: 100%;
       text-align: left;
+
       p {
         margin-bottom: 0;
       }
+
       .box__inner--text {
         position: absolute;
         left: 120px;
+
         h4 {
           font-size: 1.6em;
           color: $main-dark;
         }
+
         p {
           font-weight: 700;
           color: #2b69bf;
           font-size: 1.6em;
         }
       }
+
       .box__inner--image {
         position: absolute;
         left: 0;
         top: -10px;
       }
+    }
+  }
+}
+
+.quality__section--sm {
+  position: relative;
+  margin: 0 auto;
+}
+
+.quality__section--xs {
+  display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .quality__section--sm {
+    display: none;
+  }
+
+  .quality__section--xs {
+    display: flex;
+    position: relative;
+
+    img {
+      width: 90px;
+    }
+
+    .box__inner--text h4 {
+      font-size: 1.6em;
+      color: #365abd;
+    }
+
+    .box__inner--text p {
+      font-weight: 700;
+      color: #2b69bf;
+      font-size: 1.6em;
     }
   }
 }
