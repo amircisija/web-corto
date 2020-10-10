@@ -139,4 +139,18 @@ p.lead {
     padding: 0 30px !important;
   }
 }
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .intro__section {
+    z-index: 200;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -300px !important;
+  }
+
+  .about__us--section {
+    padding-top: 260px !important;
+  }
+}
 </style>
