@@ -1,7 +1,17 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" temporary app>
+    <v-navigation-drawer v-model="drawer" temporary app id="mobile__menu">
       <v-list>
+        <v-list-item class="mb-5">
+          <v-list-content>
+            <img
+              id="logo_image"
+              class="logo__img"
+              src="~/assets/images/logo.png"
+              alt="Corto d.o.o."
+            />
+          </v-list-content>
+        </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -9,11 +19,8 @@
           router
           exact
         >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title v-text="item.title" nuxt />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -59,7 +66,7 @@
               alt="Corto d.o.o."
             />
           </v-col>
-          <v-col class=" text-right" cols="12" sm="10" md="9">
+          <v-col class="text-right" cols="12" sm="10" md="9">
             <AppMenu />
           </v-col>
         </v-row>
@@ -67,6 +74,7 @@
     </v-app-bar>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -80,30 +88,44 @@ export default {
       logosrc: require("~/assets/images/logo-white.png"),
       items: [
         {
-          icon: "mdi-apps",
-          title: "Welcome",
-          to: "/"
+          title: "Početna",
+          to: "/",
         },
         {
-          icon: "mdi-chart-bubble",
-          title: "Inspire",
-          to: "/inspire"
-        }
+          title: "O nama",
+          to: "/#o-nama",
+        },
+        {
+          title: "Voda",
+          to: "/distribucija-vode",
+        },
+        {
+          title: "Kafa",
+          to: "/distribucija-kafe",
+        },
+        {
+          title: "Dezinfekcija",
+          to: "/dezinfekcijska-oprema",
+        },
+        {
+          title: "Kontakt",
+          to: "/#kontakt",
+        },
       ],
-      title: "Corto d.o.o"
+      title: "Corto d.o.o",
     };
   },
 
   computed: {
     company() {
       return this.$store.state.company;
-    }
+    },
   },
 
   mounted() {
     this.logosrc = require("~/assets/images/logo-white.png");
-    this.$nextTick(function() {
-      window.addEventListener("scroll", function() {
+    this.$nextTick(function () {
+      window.addEventListener("scroll", function () {
         if (document.documentElement.scrollTop >= 20) {
           document.getElementById(
             "logo_image"
@@ -132,9 +154,10 @@ export default {
         }
       });
     });
-  }
+  },
 };
 </script>
+
 <style lang="scss">
 .top__bar {
   top: -40px;
@@ -147,16 +170,19 @@ export default {
   background: $main-dark;
   color: #fff;
   border-bottom: 1px solid #e2e2e2;
+
   .top__bar--link {
     color: #fff;
     text-decoration: none;
   }
+
   p {
     font-size: 12px;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
+
   .top__bar--icon {
     color: rgb(255, 255, 255);
     background: #365abd;
@@ -165,16 +191,19 @@ export default {
     margin-right: 3px;
   }
 }
+
 #nav {
   position: fixed;
   top: 0;
   z-index: 5;
   transition: all 0.2s ease-in-out;
 }
+
 #nav {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: none;
   z-index: 250;
+
   .nav__links {
     color: #fff;
     font-family: Montserrat, serif;
@@ -182,12 +211,14 @@ export default {
     text-transform: none;
   }
 }
+
 #nav.shrink-bar {
   background: rgb(255, 255, 255) !important;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   top: 40px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
     0 8px 16px -8px rgba(0, 0, 0, 0.01), 0 -6px 16px -6px rgba(0, 0, 0, 0.03) !important;
+
   .nav__links {
     color: rgb(56, 56, 56);
     font-family: Montserrat, serif;
@@ -195,22 +226,34 @@ export default {
     text-transform: none;
   }
 }
+
 .top__bar {
   transition: all 0.2s ease-in-out;
 }
+
 .top__bar.shrink-bar {
   top: 0;
 }
+
 .logo__img {
   max-width: 100px;
   display: inline;
   position: absolute;
   top: 0;
 }
+
+.v-navigation-drawer .v-list:not(.v-select-list) {
+}
+
+#mobile__menu {
+  z-index: 900;
+}
+
 @media only screen and (max-width: 1000px) {
   #topbar {
     display: none;
   }
+
   #nav.shrink-bar {
     background: white !important;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
