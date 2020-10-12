@@ -5,6 +5,7 @@ const Tabs = [{
         'info': {
           'id': 1,
           'title': "Bakticid",
+          'image': require("~/assets/images/dezinfekcija/d-1.jpg"),
           'text_1': "Efikasan baktericid uključujući uzročnike tuberkuloze i Helicobacter pylori. Takođe djeluje na gljivice i viruse, uključujući HIV virus, virus hepatitisa A, B, C, polio-vakcinia-, adeno-, herpes simplex virus.",
           'text_2': "Brza dezinfekcija predmeta, čistih radnih površina, dezodoracija prostora, u kućanstvima, manjim i većim obrtima, restorani kozmetički i frizerski saloni, kafići.",
         },
@@ -50,6 +51,7 @@ const Tabs = [{
         'info': {
           'id': 2,
           'title': "Aseptan",
+          'image': require("~/assets/images/dezinfekcija/d-2.jpg"),
           'text_1': "Veoma je snažan bakteriostatik i baktericid, a djeluje i na gljivice, plijesni i viruse (uključujući viruse HIV-a i hepatitisa B). Aseptan svojim djelovanjem ne iritira kožu niti izaziva alergije. Koristi se nerazrijeđen utrljavanjem u kožu ruku (dezinfekcija ruku) ili prebrisavanjem površina tkaninom natopljenom Aseptanom. Ima zaštitni hidratantni agens za kožu ruku i ostavlja ugodan osvježavajući miris.",
           'text_2': "Dezinfekcija ruku, predmeta i čistih radnih površina u prehrambenoj industriji, industriji pića, u kuhinjama i sanitarnim prostorijama, u domaćinstvima, školama i obdaništima."
         },
@@ -95,6 +97,7 @@ const Tabs = [{
         'info': {
           'id': 3,
           'title': "Alkolos",
+          'image': require("~/assets/images/dezinfekcija/d-3.jpg"),
           'text_1': "Veoma je snažan bakteriostatik i baktericid, a djeluje i na gljivice, plijesni i viruse (uključujući viruse HIV-a i hepatitisa B). Alkosol svojim djelovanjem ne iritira kožu niti izaziva alergije. Koristi se nerazrijeđen utrljavanjem u kožu ruku (dezinfekcija ruku) ili prebrisavanjem površina tkaninom natopljenom Alkosolom. Ima zaštitni hidratantni agens za kožu ruku i ostavlja ugodan osvježavajući miris.",
           'text_2': "Dezinfekcija ruku, predmeta i čistih radnih površina u prehrambenoj industriji, industriji pića, u kuhinjama i sanitarnim prostorijama, u domaćinstvima, školama i obdaništima."
         },
@@ -140,6 +143,7 @@ const Tabs = [{
         'info': {
           'id': 4,
           'title': "Benzal",
+          'image': require("~/assets/images/dezinfekcija/d-4.jpg"),
           'text_1': "Benzal 5, spada u grupu kationskih dezinficijensa. Djeluje na bakterije, gljivice, alge i na pojedine lipofilne viruse, npr. na virus newcastleske bolesti i bjesnoće. Djeluje na uzročnike pojedinih bolesti riba, npr. furunkuloza, bakterijske bolesti škrga i dr. Radne otopine dezinficijensa, pripremljene prema navedenoj tabeli i uz pridržavanje preporučenih pravila, nisu toksične, ne draže tkiva, niti djeluju štetno na različite materijale od kojih su izrađeni predmeti, pribor, uređaji, oprema i površine.",
           'text_2': "Dezinfekcija površina, predmeta, pribora, uređaja i opreme u prehrambenoj industriji, mesnicama, ribarnicama i prodavnicama te u veterinarskoj medicini i stočarskoj proizvodnji."
         },
@@ -178,6 +182,7 @@ const Tabs = [{
         'info': {
           'id': 5,
           'title': "Konix",
+          'image': require("~/assets/images/dezinfekcija/d-5.jpg"),
           'text_1': "Konix gelovi su pogodni za bezvodnu upotrebu i formulisani su da smanje širenje infekcija. Sadrže 65% alkohola, kao i zaštitne ovlaživače za kožu.",
           'text_2': "Gelovi sadrže minimalno 65% alkohola te ispunjavaju preporuku vrhovnog z dravstvenog Američkog instituta CDC- a (Center for Disease Control and Prevetion of USA) za dezinfekciju protiv Corona virusa."
         },
@@ -225,6 +230,7 @@ const Tabs = [{
         'info': {
           'id': 6,
           'title': "Dezobarijere",
+          'image': require("~/assets/images/dezinfekcija/d-6.jpg"),
           'text_1': "Dezobarijera nalazi svoju primjenu u dezinfekciji obuće prilikom ulaska u zaštičeni prostor. Koriste se na ulazima u zatvorene prostore.Cilj dezobarijera je pobošljanje higijene i sprečavanje unakrsne kontaminacije. Na dezobarijeri se treba zadržati 3-5 sekundi. U dezobarijeru treba nasuti 2dcl sredstva za dezinfekciju.",
           'text_2': ""
         },
@@ -263,6 +269,7 @@ const Tabs = [{
         'info': {
           'id': 7,
           'title': "Zaštitne maske",
+          'image': require("~/assets/images/dezinfekcija/d-7.jpg"),
           'text_1': "",
           'text_2': "",
           'text_3': "200 pranja, 100% pamuk, 1 godina garancije. Maske proizvodi domaća kompanija Mitex doo iz Sarajeva."
@@ -302,6 +309,7 @@ const Tabs = [{
         'info': {
           'id': 8,
           'title': "Zaštitni viziri",
+          'image': require("~/assets/images/dezinfekcija/d-8.jpg"),
           'text_1': "",
           'text_2': "",
           'text_3': ""

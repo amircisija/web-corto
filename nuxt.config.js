@@ -2,7 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   router: {
-    base: "/clients/corto",
+    base: "/clients/corto/site",
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition;
