@@ -2,7 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   router: {
-    base: "/",
+    base: "/clients/corto",
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition;
@@ -110,7 +110,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios'],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {

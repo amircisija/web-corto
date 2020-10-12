@@ -84,7 +84,7 @@
 <script>
 import { Tabs } from "@/api/tabs";
 export default {
-  layout: "subPageLayout",
+  layout: "subpage",
   transition: "home",
   data() {
     return {

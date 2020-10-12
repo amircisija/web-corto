@@ -9,6 +9,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5",
     "vue-scroll-progress": "^1.1.2"

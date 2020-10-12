@@ -1,7 +1,6 @@
 <template>
   <v-app light>
     <AppNavigation />
-
     <v-main class="py-0">
       <nuxt />
     </v-main>
@@ -10,7 +9,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Subpage",
+};
 </script>
 
 <style lang="scss">

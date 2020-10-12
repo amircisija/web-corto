@@ -68,7 +68,7 @@ export default {
       title: "Distribucija Kimbo kafe i aparata",
       subText:
         "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-      backgroundImage: require("~/assets/images/cta__image.jpg"),
+      backgroundImage: require("~/assets/images/cta__image.jpg")
     };
   },
   head() {
@@ -79,9 +79,9 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Corto d.o.o. - Distribucija Kimbo kafe i aparata",
-        },
-      ],
+          content: "Corto d.o.o. - Distribucija Kimbo kafe i aparata"
+        }
+      ]
     };
   },
   created() {
@@ -92,8 +92,8 @@ export default {
   computed: {
     pageTitle() {
       return this.$store.state.pageTitle;
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -8,6 +8,49 @@
   </v-app>
 </template>
 
+<script>
+import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
+export default {
+  name: "Default",
+  data() {
+    return {
+      products: null,
+    };
+  },
+  methods: {
+    getProducts() {
+      const api = new WooCommerceRestApi({
+        url: "https://amircisija.com/clients/corto/api",
+        consumerKey: "ck_ceb4ed06b8a1a76b94c80b9181aee6d0dd83495c",
+        consumerSecret: "cs_24a3974451469bae174f724cdb21d9cc6e04e1e9",
+        version: "wc/v3",
+      });
+
+      api
+        .get("products", {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers":
+              "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+            "cache-control": "no-cache",
+          },
+        })
+        .then((response) => {
+          this.products = response.data;
+          this.$store.commit("SET_PRODUCTS", this.products),
+            console.log(this.products);
+        })
+        .catch((error) => {
+          console.log(error.response);
+        });
+    },
+  },
+  created() {
+    this.getProducts();
+  },
+};
+</script>
+
 <style lang="scss">
 .container.ac__cont {
   max-width: 1400px !important;

@@ -11,6 +11,7 @@
     >
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -20,47 +21,47 @@ export default {
           title: "Početna",
           sm: 0,
           to: "/",
-          hash: "",
+          hash: ""
         },
         {
           title: "O nama",
           sm: 1,
           to: "/",
-          hash: "#o-nama",
+          hash: "#o-nama"
         },
         {
           title: "Voda",
           sm: 0,
           to: "/distribucija-vode",
-          hash: "",
+          hash: ""
         },
         {
           title: "Kafa",
           sm: 0,
           to: "/distribucija-kafe",
-          hash: "",
+          hash: ""
         },
         {
           title: "Dezinfekcija",
           sm: 0,
           to: "/dezinfekcijska-oprema",
-          hash: "",
+          hash: ""
         },
         {
           title: "Pica",
           sm: 0,
-          to: "/napici",
-          hash: "",
+          to: "/proizvodi",
+          hash: ""
         },
         {
           title: "Kontakt",
           sm: 0,
           to: "/",
-          hash: "#kontakt",
-        },
+          hash: "#kontakt"
+        }
       ],
-      title: "Corto d.o.o",
+      title: "Corto d.o.o"
     };
-  },
+  }
 };
 </script>

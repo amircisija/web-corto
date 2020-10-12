@@ -151,7 +151,7 @@
 
 <script>
 export default {
-  layout: "subPageLayout",
+  layout: "subpage",
   transition: "home",
   data() {
     return {
@@ -187,14 +187,14 @@ export default {
           image: require("~/assets/images/quality/icon__4.png"),
         },
         {
-          id: 2,
+          id: 5,
           title: "Hloridi",
           subtext: "1,95",
           class: "box__2",
           image: require("~/assets/images/quality/icon__5.png"),
         },
         {
-          id: 3,
+          id: 6,
           title: "Magnezijum",
           subtext: "2,78",
           class: "box__3",

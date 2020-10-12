@@ -8,7 +8,8 @@ export const state = () => ({
     pageTitle: '',
     pageSubText: '',
     pageBackgroundImage: '',
-  }
+  },
+  products: []
 })
 
 export const mutations = {
@@ -20,6 +21,9 @@ export const mutations = {
   },
   SET_BACKGROUND_IMAGE(state, backgroundImage) {
     state.pageBackgroundImage = backgroundImage
+  },
+  SET_PRODUCTS(state, products) {
+    state.products = products;
   }
 }
 export const getters = {
@@ -31,5 +35,8 @@ export const getters = {
   },
   getPageBackgroundImage(state) {
     return state.pageBackgroundImage
+  },
+  getProducts(state) {
+    return state.products;
   }
 }
