@@ -78,8 +78,8 @@
         <v-container class="ac__cont">
             <v-row>
                 <v-col class="padding-60 my-auto pos__rel" cols="12" sm="8" md="7">
-                    <span class="title-span__2">lorem ipsum</span>
-                    <h2 class="title-heading__2 mb-2">Heading 2</h2>
+                    <span class="title-span__2">Lorem ipsum</span>
+                    <h2 class="title-heading__2 mb-2">Placeholder Title</h2>
                     <hr class="hr-style--1" />
                     <p>
                         Trudimo se da naši proizvodi i usluge odgovore potrebama klijenata

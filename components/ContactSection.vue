@@ -2,7 +2,7 @@
 <section class="contact contact__section" id="kontakt">
     <v-container fluid class="py-0">
         <v-row>
-            <v-col class="pb-xs-1 padding-200 my-auto" lg="6" sm="12" md="6" cols="12">
+            <v-col class="pb-xs-1 padding-200 my-auto padding-100" lg="6" sm="12" md="6" cols="12">
                 <span class="title-span__2">lorem ipsum</span>
                 <h2 class="title-heading__2 mb-2">Kontakt</h2>
                 <p class="lead">Stojimo Vam na raspolaganju za sva Vaša pitanja</p>
@@ -88,21 +88,21 @@
                                                     <h3>Pošaljite nam poruku</h3>
                                                 </v-col>
                                                 <v-col>
-                                                    <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Vaše ime" required filled></v-text-field>
+                                                    <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Vaše ime" required></v-text-field>
                                                 </v-col>
                                             </v-row>
                                             <v-row>
                                                 <v-col>
-                                                    <v-text-field v-model="email" :rules="emailRules" label="E-mail" required filled></v-text-field>
+                                                    <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
                                                 </v-col>
                                                 <v-col>
-                                                    <v-text-field v-model="phone" label="Telefon" required filled></v-text-field>
+                                                    <v-text-field v-model="phone" label="Telefon" required></v-text-field>
                                                 </v-col>
                                             </v-row>
                                             <v-row>
                                                 <v-col>
-                                                    <v-select v-model="select" :items="items" :rules="[(v) => !!v || 'Obavezno polje']" label="Imam pitanje u vezi" required filled></v-select>
-                                                    <v-textarea name="input-7-1" label="Vaša poruka" value="" hint="Pošaljite nam upit" filled></v-textarea>
+                                                    <v-select v-model="select" :items="items" :rules="[(v) => !!v || 'Obavezno polje']" label="Imam pitanje u vezi" required></v-select>
+                                                    <v-textarea name="input-7-1" label="Vaša poruka" value="" hint="Pošaljite nam upit"></v-textarea>
                                                 </v-col>
                                             </v-row>
                                             <v-row>

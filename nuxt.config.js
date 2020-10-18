@@ -77,8 +77,17 @@ export default {
       href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
     }, {
       type: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap'
+    }, {
+      type: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap'
+    }, {
+      type: 'stylesheet',
       href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css'
-    }]
+    }],
+    script: [{
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.4/polyfill.min.js'
+    }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

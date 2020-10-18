@@ -22,10 +22,10 @@
                                                     <v-col cols="12" sm="9">
                                                         <v-row>
                                                             <v-col>
-                                                                <h3 class="title__3">
+                                                                <h3 :class="`title__3 ${tab.tabItem.main.info.class}`">
                                                                     {{ tab.tabItem.main.info.title }}
                                                                 </h3>
-                                                                <hr class="hr-style--1 d-block" />
+                                                                <hr :class="`hr-style--1 d-block ${tab.tabItem.main.info.class}`" />
                                                             </v-col>
                                                         </v-row>
                                                         <v-row v-if="tab.tabItem.main.info.text_1">
@@ -99,7 +99,7 @@ export default {
             ],
             title: "Dezinfekcijska oprema",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/cta__image.jpg"),
+            backgroundImage: require("~/assets/images/img-6.jpg"),
         };
     },
     head() {
@@ -175,7 +175,12 @@ h3.title__3 {
 }
 
 h4 {
-    font-size: 1.3em;
+    display: block;
+    width: 100%;
+    font-weight: 600 !important;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .do-elevation {
@@ -235,5 +240,45 @@ h4 {
     .padding-60 {
         padding: 0;
     }
+}
+
+.d__1 {
+    color: #46b974 !important;
+    border-color: #46b974;
+}
+
+.d__2 {
+    color: #475fa3 !important;
+    border-color: #475fa3;
+}
+
+.d__3 {
+    color: #3e36bd !important;
+    border-color: #3e36bd;
+}
+
+.d__4 {
+    color: #02afe3 !important;
+    border-color: #02afe3;
+}
+
+.d__5 {
+    color: #06acbe !important;
+    border-color: #06acbe;
+}
+
+.d__6 {
+    color: #e43a29 !important;
+    border-color: #e43a29;
+}
+
+.d__7 {
+    color: #ec4c3d !important;
+    border-color: #f25041;
+}
+
+.d__8 {
+    color: #f56c28 !important;
+    border-color: #f56c28;
 }
 </style>
