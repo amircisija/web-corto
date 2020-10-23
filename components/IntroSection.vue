@@ -6,7 +6,7 @@
 
                 <v-card class="elevation-ac intro__cards text-center">
 
-                    <v-img height="250" :src="box.img"></v-img>
+                    <v-img height="220" :src="box.img"></v-img>
 
                     <v-card-title class="pt-5">
                         <h3>{{ box.title }}</h3>
@@ -28,21 +28,21 @@ export default {
                     id: 1,
                     title: "Aqua Bianca voda",
                     text: "Aqua Bianca je prirodna negazirana mineralna voda. Zahvaljujući optimalnom odnosu minerala, kalcijuma i magnezijuma i niskom sadržaju natrijuma, Aqua Bianca voda pogodna je za svakodnevnu upotrebu.",
-                    img: require("~/assets/images/img-4.jpg"),
+                    img: require("~/assets/images/logo--qb.jpg"),
                     link: "/distribucija-vode",
                 },
                 {
                     id: 2,
                     title: "Kimbo kafa i aparati",
                     text: "Užitak koji oživljava sva čula: puna zlatna krema, izbalansiran okus, intenzivna aroma koja mjenja pauzu za kafu u moment užitka za svaki dan.",
-                    img: require("~/assets/images/k--3.jpg"),
+                    img: require("~/assets/images/logo--kimbo.jpg"),
                     link: "/distribucija-kafe",
                 },
                 {
                     id: 3,
                     title: "Dezinfekcijska oprema",
                     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-                    img: require("~/assets/images/img-5.jpg"),
+                    img: require("~/assets/images/logo--d.jpg"),
                     link: "/dezinfekcijska-oprema",
                 },
             ],

@@ -99,7 +99,7 @@ export default {
             ],
             title: "Dezinfekcijska oprema",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/img-6.jpg"),
+            backgroundImage: require("~/assets/images/cta__image.jpg"),
         };
     },
     head() {

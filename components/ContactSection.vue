@@ -3,8 +3,7 @@
     <v-container fluid class="py-0">
         <v-row>
             <v-col class="pb-xs-1 padding-200 my-auto padding-100" lg="6" sm="12" md="6" cols="12">
-                <span class="title-span__2">lorem ipsum</span>
-                <h2 class="title-heading__2 mb-2">Kontakt</h2>
+                <h2 class="title-heading__2 mb-2">Pošaljite upit</h2>
                 <p class="lead">Stojimo Vam na raspolaganju za sva Vaša pitanja</p>
                 <hr class="hr-style--1" />
                 <p class="mb-40">

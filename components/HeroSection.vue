@@ -76,7 +76,7 @@ export default {
 
 .hero__section {
     height: 100vh;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     position: relative;
     //background: url("~assets/images/hero-image-2.jpg") 50% 50% no-repeat;
     background-size: cover;

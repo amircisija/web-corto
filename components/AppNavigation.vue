@@ -34,9 +34,7 @@
                         {{ company.email }}
                     </p>
                 </v-col>
-                <v-col class="text-right py-0" cols="12" sm="3" md="3">
-                    <p class="d-inline-block">Preuzmite katalog</p>
-                </v-col>
+
             </v-row>
         </v-container>
     </div>
@@ -73,7 +71,7 @@ export default {
                 },
                 {
                     title: "O nama",
-                    to: "/#o-nama",
+                    to: "/o-nama",
                 },
                 {
                     title: "Voda",
@@ -93,7 +91,7 @@ export default {
                 },
                 {
                     title: "Kontakt",
-                    to: "/#kontakt",
+                    to: "/kontakt",
                 },
             ],
             title: "Corto d.o.o",

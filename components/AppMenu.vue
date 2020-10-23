@@ -17,8 +17,8 @@ export default {
                 {
                     title: "O nama",
                     sm: 1,
-                    to: "/",
-                    hash: "#o-nama",
+                    to: "/o-nama",
+                    hash: "",
                 },
                 {
                     title: "Voda",
@@ -47,8 +47,8 @@ export default {
                 {
                     title: "Kontakt",
                     sm: 0,
-                    to: "/",
-                    hash: "#kontakt",
+                    to: "/kontakt",
+                    hash: "",
                 },
             ],
             title: "Corto d.o.o",

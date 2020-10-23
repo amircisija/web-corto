@@ -8,36 +8,42 @@
                     <v-col class="my-auto pos__rel" cols="12" sm="12" md="5">
                         <img src="~/assets/images/k--1.jpg" class="elevation-ac k__img--1" alt="" />
                         <img src="~/assets/images/k--2.jpg" class="elevation-ac k__img--2" alt="" />
-
-                        <img class="img-fluid elevation-ac" style="max-width: 100%" src="~/assets/images/k--4.jpg" />
+                        <img class="img-fluid elevation-ac" style="max-width: 100%" src="~/assets/images/k--3.jpg" />
                     </v-col>
                     <v-col class="padding-60 my-auto" cols="12" sm="12" md="7">
-                        <span class="title-span__2">Doživljaj za sva čula</span>
-                        <h2 class="title-heading__2 mb-2">Kimbo kafa i aparati</h2>
+                        <span class="title-span__2">Kvalitet i povjerenje</span>
+                        <h1 class="title-heading__2 mb-2">Kvalitetna voda i kafa za Vaš ured širom Bosne i Hercegovine</h1>
                         <p class="lead">
-                            Za Vaš ured nudimo Vam
-                            <strong>besplatan aparat na korištenje </strong> u minimalnu
-                            mjesečnu potrošnju.
+                            Vjerujemo da se povjerenje u uslugu održava kroz efikasnost,
+                            korektnost i fleksibilnost, i naš fokus je upravo na ovim
+                            vrijednostima.
                         </p>
                         <hr class="hr-style--1" />
                         <p class="mb-40">
-                            Sve počinje pažljivom selekcijom najkvalitetnijiH zrna kafe
-                            direktno sa plantaža. Majstorska kreacija ekskluzivnih mješavina
-                            različitih zrna kafe i specijalan način prženja, tajne su
-                            jedinistvene espresso kafe koja zadovoljava i najkritičnijeg
-                            gurmana.
+                            Sjedište firme Corto d.o.o. je u Sarajevu, a
+                            <strong>isporuka se vrši i u drugim dijelovima Bosne i
+                                Hercegovine</strong>. Povjerenje kupaca u uslužnoj industriji veoma je važno jer je
+                            riječ o proizvodima za koji se kupci posebno vežu. Svjesni
+                            odgovornosti koju imamo marljivo radimo kako bismo pridobili
+                            povjerenje klijenata.
                         </p>
                         <p>
-                            Užitak koji oživljava sva čula: puna zlatna krema, izbalansiran
-                            okus, intenzivna aroma koja mjenja pauzu za kafu u moment užitka
-                            za svaki dan.
+                            Trudimo se da naši proizvodi i usluge odgovore potrebama klijenata
+                            po pitanju kvalitete. Od 2016. godine ponuda naše firme je
+                            proširena, tako da pored vode Aqua Bianca uključuje kafu. Izborom
+                            Corto usluga, klijenti pokazuju da brinu za svoje zaposlene, a mi
+                            brinemo o svakom korisniku naših proizvoda i usluga. U našoj
+                            ponudi nalaze se i <strong>aparati za vodu</strong>, kao i
+                            <strong>aparati za kafu</strong>, što nam omogućava da izađemo
+                            ususret različitim potrebama korisnika koji žele da na svom radnom
+                            mjestu imaju kvalitetn uvodu, kafu i čaj.
                         </p>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Tempore accusantium quod consequuntur nobis assumenda illo magni
-                            labore iure aut officiis. Nobis nulla vel fuga? Aliquam
-                            repellendus sunt temporibus hic ullam.
+                        <p class="mb-40">
+                            Dugoročna poslovna saradnja izuzetno je značajna za uspješno
+                            poslovanje, zato svoja dugogodišnja partnerstva sa klijentima
+                            smatramo privilegijom.
                         </p>
+
                         <br />
                         <v-btn class="ma-2 ml-0 bt--1" tile>Naruči</v-btn>
                     </v-col>
@@ -54,7 +60,7 @@ export default {
     transition: "home",
     data() {
         return {
-            title: "Distribucija Kimbo kafe i aparata",
+            title: "O nama",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
             backgroundImage: require("~/assets/images/cta__image.jpg")
         };
@@ -67,7 +73,7 @@ export default {
                 {
                     hid: "description",
                     name: "description",
-                    content: "Corto d.o.o. - Distribucija Kimbo kafe i aparata"
+                    content: "Corto d.o.o. - Pored vode Aqua Bianca, nudimo i kafu Kimbo i čajeve Plantago."
                 }
             ]
         };
