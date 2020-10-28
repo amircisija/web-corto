@@ -6,46 +6,28 @@
             <v-container class="ac__cont">
                 <v-row>
                     <v-col class="my-auto pos__rel" cols="12" sm="12" md="5">
-                        <img src="~/assets/images/k--1.jpg" class="elevation-ac k__img--1" alt="" />
-                        <img src="~/assets/images/k--2.jpg" class="elevation-ac k__img--2" alt="" />
-                        <img class="img-fluid elevation-ac" style="max-width: 100%" src="~/assets/images/k--3.jpg" />
+
+                        <img class="img-fluid elevation-ac" style="max-width: 100%" src="~/assets/images/team.jpg" />
                     </v-col>
                     <v-col class="padding-60 my-auto" cols="12" sm="12" md="7">
                         <span class="title-span__2">Kvalitet i povjerenje</span>
-                        <h1 class="title-heading__2 mb-2">Kvalitetna voda i kafa za Vaš ured širom Bosne i Hercegovine</h1>
-                        <p class="lead">
-                            Vjerujemo da se povjerenje u uslugu održava kroz efikasnost,
-                            korektnost i fleksibilnost, i naš fokus je upravo na ovim
-                            vrijednostima.
-                        </p>
+                        <h1 class="title-heading__2 mb-2">Corto d.o.o. Sarajevo</h1>
                         <hr class="hr-style--1" />
-                        <p class="mb-40">
-                            Sjedište firme Corto d.o.o. je u Sarajevu, a
-                            <strong>isporuka se vrši i u drugim dijelovima Bosne i
-                                Hercegovine</strong>. Povjerenje kupaca u uslužnoj industriji veoma je važno jer je
-                            riječ o proizvodima za koji se kupci posebno vežu. Svjesni
-                            odgovornosti koju imamo marljivo radimo kako bismo pridobili
-                            povjerenje klijenata.
+                        <p>
+                            Firma Corto d.o.o. Sarajevo je proizvodno uslužnog oblika sa sjedištem u Sarajevu a sa radom je započela 2012 godine. Corto d.o.o. se bavi punjenjem i isporukom vode u galonima pomoću water cooler aparata kao i distribucijom kafe Kimbo porijeklom iz Italije. <strong>Isporuka naših proizvoda se vrši i u drugim dijelovima Bosne i Hercegovine.</strong>
                         </p>
                         <p>
-                            Trudimo se da naši proizvodi i usluge odgovore potrebama klijenata
-                            po pitanju kvalitete. Od 2016. godine ponuda naše firme je
-                            proširena, tako da pored vode Aqua Bianca uključuje kafu. Izborom
-                            Corto usluga, klijenti pokazuju da brinu za svoje zaposlene, a mi
-                            brinemo o svakom korisniku naših proizvoda i usluga. U našoj
-                            ponudi nalaze se i <strong>aparati za vodu</strong>, kao i
-                            <strong>aparati za kafu</strong>, što nam omogućava da izađemo
-                            ususret različitim potrebama korisnika koji žele da na svom radnom
-                            mjestu imaju kvalitetn uvodu, kafu i čaj.
+                            Ciljevi u koje smo uložili velike napore tokom godina su da postanemo dostupni na području čitave BiH kao firma koja opslužuje druge firme vode,kafom i drugim osvježavajućim pićima.
                         </p>
                         <p class="mb-40">
-                            Dugoročna poslovna saradnja izuzetno je značajna za uspješno
-                            poslovanje, zato svoja dugogodišnja partnerstva sa klijentima
-                            smatramo privilegijom.
+                            Povjerenje kupaca u uslužnoj industriji veoma je važno jer je riječ o proizvodima za koji se kupci posebno vežu. Svjesni odgovornosti koju imamo marljivo radimo kako bismo pridobili povjerenje klijenata.
                         </p>
 
-                        <br />
-                        <v-btn class="ma-2 ml-0 bt--1" tile>Naruči</v-btn>
+                        <v-alert border="left" colored-border color="success accent-4" class="pl-4 elevation-ac">
+                            <p class="lead pl-5">
+                                Vjerujemo da se povjerenje u uslugu održava kroz efikasnost, korektnost i fleksibilnost, i naš fokus je upravo na ovim vrijednostima.
+                            </p>
+                        </v-alert>
                     </v-col>
                 </v-row>
             </v-container>
@@ -62,7 +44,7 @@ export default {
         return {
             title: "O nama",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/cta__image.jpg")
+            backgroundImage: require("~/assets/images/hero_sub.jpg")
         };
     },
     head() {
@@ -73,7 +55,7 @@ export default {
                 {
                     hid: "description",
                     name: "description",
-                    content: "Corto d.o.o. - Pored vode Aqua Bianca, nudimo i kafu Kimbo i čajeve Plantago."
+                    content: "Corto d.o.o. - Corto d.o.o. se bavi punjenjem i isporukom vode u galonima pomoću water cooler aparata kao i distribucijom kafe Kimbo porijeklom iz Italije"
                 }
             ]
         };

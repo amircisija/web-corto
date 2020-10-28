@@ -2,45 +2,39 @@
 <div>
     <AppPageTitle />
     <div class="main__content subpage__1">
-        <section class="page__section pb-0">
+        <section class="page__section">
             <v-container class="ac__cont">
-                <v-row>
-                    <v-col cols="12" sm="12" md="5" class="my-auto">
-                        <img class="img-fluid" style="max-width: 100%" src="~/assets/images/logo--qb.jpg" />
-                        <img class="img-fluid" style="max-width: 100%" src="~/assets/images/img--2.jpg" />
+                <v-row class="water__section">
+                    <v-col class="pos__rel d-none d-md-block" cols="12" sm="12" md="5">
+                        <img class="k__img--3" style="max-width: 100%" src="~/assets/images/img__5.png" />
+                        <img src="~/assets/images/cta__image__4.png" class="k__img--2" alt="" />
                     </v-col>
                     <v-col cols="12" sm="12" md="7" class="padding-60 my-auto">
                         <span class="title-span__2">Prirodna izvorska voda</span>
-                        <h2 class="title-heading__2 mb-2">Aqua Bianca voda</h2>
-                        <p class="lead">
-                            Nudimo Vam <strong>besplatno korištenje</strong> water cooler
-                            aparata uz kupovinu 3 galona mjesečno.
-                        </p>
+                        <h1 class="title-heading__2 mb-2">Aqua Bianca</h1>
                         <hr class="hr-style--1" />
-                        <p class="mb-40">
-                            Aqua Bianca je prirodna negazirana mineralna voda. Zahvaljujući
-                            optimalnom odnosu minerala, kalcijuma i magnezijuma i niskom
-                            sadržaju natrijuma, Aqua Bianca voda pogodna je za svakodnevnu
-                            upotrebu.
-                        </p>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Pariatur dolores sunt deleniti consectetur tempore aperiam.
-                            Dolores quaerat nam, eaque magnam mollitia perferendis sunt
-                            ipsum rerum incidunt voluptatibus dicta expedita autem. Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Illo libero
-                            suscipit non quaerat tempora nobis eveniet, fugiat officia! Quia
-                            corrupti fugit rem amet modi. Minima doloribus at tenetur.
-                            Impedit, ipsam?
+                            Aqua Bianca je prirodna negazirana mineralna voda. Zahvaljujući optimalnom odnosu minerala, kalcijuma i magnezijuma Aqua Bianca voda pogodna je za svakodnevnu upotrebu. Voda Aqua Bianca dolazi sa planine Perun na lokalitetu općine Vareš.
                         </p>
+                        <p class="mb-40">
+                            Ukupna mineralizacija vode je mg/l 263,33 što je vrijednosni sinonim za vrhunski kvalitet.
+                        </p>
+                        <v-alert border="left" colored-border color="success accent-4" class="pl-4 elevation-ac">
+                            <p class="lead pl-5">
+                                Nudimo Vam na <strong>besplatno korištenje</strong> aparata za vodu uz kupovinu samo tri galona vode mjesečno.
+                            </p>
+                        </v-alert>
                         <br />
-                        <v-btn class="ma-2 ml-0 bt--1" tile>Naruči</v-btn>
-                        <v-btn class="ma-2 bt--2" outlined>Kvalitet vode</v-btn>
+                        <v-btn class="ma-2 ml-0 bt--1" tile nuxt to="/kontakt">Naruči</v-btn>
+                        <v-btn class="ma-2 bt--2" outlined @click="$vuetify.goTo('#znacaj-vode')">Značaj vode</v-btn>
                     </v-col>
                 </v-row>
             </v-container>
         </section>
-        <section class="page__section section__quality pb-0">
+        <section class="section_wi page__section" id="znacaj-vode">
+            <WaterImportance />
+        </section>
+        <section class="page__section section__quality pb-0" id="kvalitet-vode">
             <v-container class="ac__cont">
                 <v-row>
                     <v-col class="padding-60 my-auto mx-auto text-center" sm="7">
@@ -164,9 +158,9 @@ export default {
                     image: require("~/assets/images/quality/icon__6.png"),
                 },
             ],
-            title: "Distribucija vode",
+            title: "Distribucija Aqua Bianca vode",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/cta__image.jpg"),
+            backgroundImage: require("~/assets/images/hero_sub.jpg"),
         };
     },
     head() {
@@ -177,7 +171,7 @@ export default {
                 {
                     hid: "description",
                     name: "description",
-                    content: "Corto d.o.o. - Distribucija vode",
+                    content: "Corto d.o.o. - Corto d.o.o. se bavi punjenjem i isporukom Aqua Bianca vode u galonima pomoću water cooler aparata kao i distribucijom kafe Kimbo porijeklom iz Italije",
                 },
             ],
         };
@@ -196,6 +190,34 @@ export default {
 </script>
 
 <style lang="scss">
+.water__section {
+    .k__img--1 {
+        position: absolute;
+        max-width: 240px;
+        top: -100px;
+        left: -80px;
+    }
+
+    .k__img--2 {
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        max-width: 567px;
+        bottom: -80px;
+    }
+
+    .k__img--3 {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        max-width: 400px !important;
+    }
+}
+
+.section_wi {
+    background: #fafafa;
+}
+
 .subpage__1 {
     .section__quality {
         background: url("~assets/images/quality/bg.jpg") 50% 50% no-repeat;

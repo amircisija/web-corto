@@ -55,7 +55,7 @@
                         <hr class="hr-style--1" />
                     </v-col>
                 </v-row>
-                <v-row>
+                <v-row class="padding-60">
                     <v-col cols="12" sm="6" md="3" v-for="product in products" :key="product.id">
                         <v-card class="mb-5 product__card">
                             <v-img v-for="image in product.images" height="250" :src="image.src" :key="image.id"></v-img>
@@ -88,7 +88,7 @@ export default {
             selectedProduct: null,
             title: "Proizvodi",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/cta__image.jpg"),
+            backgroundImage: require("~/assets/images/hero_sub.jpg"),
         };
     },
     head() {

@@ -45,8 +45,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - Corto',
-    title: 'Corto',
+    titleTemplate: 'Corto d.o.o. Sarajevo | %s',
+    title: 'Corto d.o.o. Sarajevo | Distribucija vode, kafe i dezinfekcijskih sredstava',
     meta: [{
         charset: 'utf-8'
       },
@@ -57,7 +57,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: 'Sa više od 10 godina iskustva u pružanju usluga biznis korisnicima firma Corto d.o.o. je lideru oblasti dirstibucije vode pomoću water cooler aparata u Bosni i Hercegovini'
       },
       {
         hid: 'author',

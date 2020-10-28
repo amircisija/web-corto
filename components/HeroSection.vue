@@ -1,6 +1,6 @@
 <template>
 <section class="hero__section">
-    <v-parallax height="950" dark :src="require('@/assets/images/hero-image-2.jpg')">
+    <v-parallax height="950" dark :src="require('@/assets/images/hero__image__4.jpg')">
         <v-container fluid class="fill-height ac__cont hero__content">
             <v-row align="center" justify="center" class="fill-height">
                 <v-col cols="12" sm="12" md="7" class="mx-auto text-center ts--d text-sm-left text-xs-center">
@@ -20,14 +20,14 @@
         </v-container>
 
         <div class="img__holder">
-            <img class="img__holder--img img__holder--image--1" src="~/assets/images/cta__image__2.png" />
+            <img class="img__holder--img img__holder--image--1" src="~/assets/images/cta__image__4.png" />
             <img class="img__holder--img img__holder--image--2" src="~/assets/images/cta__image__2-badge.png" />
         </div>
         <div class="shape__wrapper">
-            <img class="img-fluid" src="~/assets/images/shape__hero--2.png" />
+            <img class="img-fluid" src="~/assets/images/shape__hero--3.png" />
         </div>
     </v-parallax>
-    <IntroSection class="d-sm-up intro__section" />
+
 </section>
 </template>
 
@@ -76,7 +76,6 @@ export default {
 
 .hero__section {
     height: 100vh;
-    margin-bottom: 300px;
     position: relative;
     //background: url("~assets/images/hero-image-2.jpg") 50% 50% no-repeat;
     background-size: cover;
@@ -106,7 +105,7 @@ export default {
     }
 
     h1 {
-        color: #fff;
+        color: #1C2225;
         font-size: 60px;
         line-height: 68px;
         margin-bottom: 30px;
@@ -114,15 +113,16 @@ export default {
     }
 
     h2 {
-        color: #fff;
-        font-size: 30px;
+        color: #1C2225;
+        font-size: 17px;
         line-height: 36px;
         margin-bottom: 10px;
-        font-weight: 300;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     p.hero__section--p {
-        color: rgba(255, 255, 255, 0.9);
+        color: #1C2225;
         font-size: 22px;
         line-height: 30px;
         font-weight: 300;
@@ -133,7 +133,7 @@ export default {
 .bt--1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
     padding: 25px 40px !important;
-    background: $main-success !important;
+    background: #365abd !important;
     color: #fff !important;
     border-radius: 4px;
     box-shadow: 0 15px 30px 0 rgb(115 119 110 / 32%);
@@ -145,11 +145,12 @@ export default {
 }
 
 .bt--2 {
-    color: #ffffff !important;
+    color: #365abd !important;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
     padding: 25px 40px !important;
     border-radius: 4px;
     transition: 0.3s ease-in-out;
+    background: rgb(255 255 255 / 62%);
 
     &:hover {
         box-shadow: 0 5px 20px 0 rgb(115 119 110 / 20%);
@@ -199,7 +200,6 @@ export default {
 
 @media only screen and (max-width: 1100px) {
     .hero__section h1 {
-        color: #fff;
         font-size: 49px;
         line-height: 68px;
         margin-bottom: 30px;

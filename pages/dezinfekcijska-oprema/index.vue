@@ -99,7 +99,7 @@ export default {
             ],
             title: "Dezinfekcijska oprema",
             subText: "Nam aliquet dolor mauris, tempor dapibus est luctus fringilla. Praesent pellentesque lacus sit amet sapien commodo tempus.",
-            backgroundImage: require("~/assets/images/cta__image.jpg"),
+            backgroundImage: require("~/assets/images/hero_sub.jpg"),
         };
     },
     head() {
@@ -110,7 +110,7 @@ export default {
                 {
                     hid: "description",
                     name: "description",
-                    content: "Corto d.o.o. - Distribucija Kimbo kafe i aparata",
+                    content: "Corto d.o.o. - Distribucija dezinfekcijske opreme, maski, vizira.",
                 },
             ],
         };

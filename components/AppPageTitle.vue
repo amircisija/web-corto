@@ -36,13 +36,14 @@ export default {
     padding-top: 120px;
     background-size: cover;
     background-position: 50% 60%;
+    border-bottom: 10px solid #f5f5f5;
 }
 
 h3.title-heading__3 {
     font-weight: 600;
     line-height: 46px;
     font-size: 43px;
-    color: #ffffff;
+    color: #1C2225;
     margin-bottom: 20px;
 }
 
@@ -58,7 +59,7 @@ h3.title-heading__3 {
         font-weight: 600;
         line-height: 46px;
         font-size: 32px;
-        color: #ffffff;
+        color: #1C2225;
         margin-bottom: 20px;
     }
 }

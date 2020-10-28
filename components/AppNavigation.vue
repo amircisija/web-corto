@@ -187,10 +187,11 @@ export default {
     z-index: 250;
 
     .nav__links {
-        color: #fff;
+        color: #212121;
         font-family: "Montserrat", serif;
-        font-weight: 400 !important;
-        text-transform: none;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+        font-size: 12px;
 
         .v-btn__content {
             font-family: "Montserrat", serif;
@@ -208,8 +209,9 @@ export default {
     .nav__links {
         color: rgb(56, 56, 56);
         font-family: "Montserrat", serif;
-        font-weight: 400 !important;
-        text-transform: none;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+        font-size: 12px;
     }
 }
 

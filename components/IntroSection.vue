@@ -1,12 +1,12 @@
 <template>
-<section>
+<section class="intro--section">
     <v-container class="ac__cont">
         <v-row>
             <v-col v-for="box in boxes" :key="box.id" cols="12" sm="6" md="4">
 
                 <v-card class="elevation-ac intro__cards text-center">
 
-                    <v-img height="220" :src="box.img"></v-img>
+                    <v-img height="180" class="intro__image--box mb-5" :src="box.img"></v-img>
 
                     <v-card-title class="pt-5">
                         <h3>{{ box.title }}</h3>
@@ -52,6 +52,14 @@ export default {
 </script>
 
 <style lang="scss">
+.intro--section {
+    padding-bottom: 100px;
+}
+
+.intro__image--box {
+    border-bottom: 1px solid #ccc;
+}
+
 .intro__cards {
     min-height: 390px;
 
